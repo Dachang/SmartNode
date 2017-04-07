@@ -70,6 +70,7 @@
     padding-left: 2rem;
     height: calc(100% - 12.5rem);
     position: absolute;
+    overflow: scroll;
   }
   .course{
     margin: 0 0.7rem 1.5rem 0;
