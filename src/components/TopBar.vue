@@ -61,16 +61,7 @@ export default {
     width: 100%;
     display: block;
     margin-bottom: 3rem;
-  }
-  .top-bar:after{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    background: #DADADA;
-    position: absolute;
-    top: 3rem;
-    z-index: 1
+    border-bottom: 1px solid #DADADA;
   }
   .logo{
     padding-left: 1rem;

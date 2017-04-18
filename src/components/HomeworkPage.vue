@@ -1,20 +1,18 @@
 <template>
   <div class="content">
     <content-header>
-      <p slot="title" class="title">当前课程</p>
-      <p slot="subtitle" class="subtitle">编程基础 第一学期</p>
-      <Button slot="btn" type="ghost" class="btn-font custom-ghost"> 查看简介</Button>
+      <p slot="title" class="title">本周作业</p>
+      <p slot="subtitle" class="subtitle">制作一个寻路机器人</p>
+      <Button slot="btn" type="ghost" class="btn-font custom-ghost">查看详情</Button>
     </content-header>
-    <course-list></course-list>
   </div>
 </template>
 
 <script>
   import ContentHeader from './content/Header.vue';
-  import CourseList from './content/CourseList.vue';
 
   export default {
-    name: 'content',
+    name: 'homework-page',
     data () {
       return {
         msg: 'here is content'
@@ -22,7 +20,6 @@
     },
     components:{
       ContentHeader,
-      CourseList
     }
   }
 </script>

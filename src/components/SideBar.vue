@@ -15,6 +15,7 @@
 </template>
 <script>
   export default {
+    name: "side-bar",
     data () {
       return {
         theme3: 'light',
@@ -29,14 +30,14 @@
           '选项与设置'
         ],
         urlGroup:[
-          'syllabus',
-          'homework',
-          'score',
-          'group',
-          'exercise',
-          'files',
-          'message',
-          'settings'
+          '/syllabus',
+          '/homework',
+          '/score',
+          '/group',
+          '/exercise',
+          '/files',
+          '/message',
+          '/settings'
         ],
         activatedBtn:0
       }
@@ -51,9 +52,9 @@
 
 <style scoped>
   .side-bar{
-    position: fixed;
+    position: absolute;
     left: 0;
-    height: calc( 100% - 6rem );
+    height: calc( 100% - 6.5rem);
   }
   .side-bar > ul{
     margin-top: -1rem;/* TODO:不知道为什么。。。没有这条就会差一条距离————朱嘉业 注 2017/03/07 */

@@ -24,17 +24,18 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .content-header{
-    padding: 0 2rem 4rem 2rem;
+    margin: 0 2rem 3rem 2rem;
     height: 6.5rem;
+    border-bottom: 1px solid #d6d6d6;
   }
-  .content-header:after{
+  /* .content-header:after{
     content: '';
     height: 1px;
     background: #d6d6d6;
     width: calc(100% - 16rem);
     position: absolute;
     margin-top: 3rem;
-  }
+  } */
   /*h1{*/
     /*color: black;*/
   /*}*/

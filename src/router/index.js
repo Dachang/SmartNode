@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
-import Syllabus from '@/components/Syllabus'
-import Homework from '@/components/Homework'
+import SyllabusPage from '@/components/SyllabusPage'
+import HomeworkPage from '@/components/HomeworkPage'
 
 Vue.use(Router);
 
@@ -12,7 +12,8 @@ export default new Router({
     {
       path: '/',
       name: 'Root',
-      component: Syllabus
+      component: SyllabusPage,
+      redirect: '/syllabus/1'
     },
     {
       path: '/hello',
@@ -21,18 +22,28 @@ export default new Router({
     },
     {
       path: '/syllabus',
+      redirect: '/syllabus/0'
+    },
+    {
+      path: '/syllabus/:id',
       name: 'Syllabus',
-      component: Syllabus
+      component: SyllabusPage
+      // children:[
+      // {
+      //   path:'01',
+      //   component:
+      // }
+      // ]
     },
     {
       path: '/homework',
       name: 'Homework',
-      component: Homework
+      component: HomeworkPage
     },
     {
       path: '/score',
       name: 'Score',
-      component: Syllabus
+      component: SyllabusPage
     },
     {
       path: '/group',
@@ -42,7 +53,7 @@ export default new Router({
     {
       path: '/exercise',
       name: 'Exercise',
-      component: Syllabus
+      component: SyllabusPage
     },
     {
       path: '/files',
@@ -52,7 +63,7 @@ export default new Router({
     {
       path: '/message',
       name: 'Message',
-      component: Syllabus
+      component: SyllabusPage
     },
     {
       path: '/settings',
