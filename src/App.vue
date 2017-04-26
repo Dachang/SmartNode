@@ -37,6 +37,12 @@ export default {
   .fast{
     animation-duration: 0.2s !important;
   }
+  .margin{
+    margin: 1.5rem 0;
+  }
+  .padding{
+    padding: 0 2rem;
+  }
 /*#app {*/
   /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
   /*-webkit-font-smoothing: antialiased;*/

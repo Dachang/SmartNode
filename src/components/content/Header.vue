@@ -16,7 +16,7 @@
       return {
         msg: '编程基础 第一学期'
       }
-    },
+    }
 //    props:['title','subtitle']
   }
 </script>
@@ -28,17 +28,6 @@
     height: 6.5rem;
     border-bottom: 1px solid #d6d6d6;
   }
-  /* .content-header:after{
-    content: '';
-    height: 1px;
-    background: #d6d6d6;
-    width: calc(100% - 16rem);
-    position: absolute;
-    margin-top: 3rem;
-  } */
-  /*h1{*/
-    /*color: black;*/
-  /*}*/
   .title{
     color: black;
     font-size: 18px;

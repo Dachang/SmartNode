@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import SyllabusPage from '@/components/SyllabusPage'
 import HomeworkPage from '@/components/HomeworkPage'
+import HomeworkDetail from '@/components/content/homework/HomeworkDetail'
 
 Vue.use(Router);
 
@@ -22,7 +23,7 @@ export default new Router({
     },
     {
       path: '/syllabus',
-      redirect: '/syllabus/0'
+      redirect: '/syllabus/1'
     },
     {
       path: '/syllabus/:id',
@@ -38,7 +39,16 @@ export default new Router({
     {
       path: '/homework',
       name: 'Homework',
-      component: HomeworkPage
+      component: HomeworkPage,
+      // children:[{
+      //   path:':id',
+      //   component:HomeworkDetail
+      // }]
+    },
+    {
+      path: '/homework/:id',
+      name: 'HomeworkDetail',
+      component: HomeworkDetail
     },
     {
       path: '/score',

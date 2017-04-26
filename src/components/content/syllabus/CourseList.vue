@@ -16,7 +16,7 @@
     name: 'syllabuspage-courselist',
     data () {
       return {
-        selected: this.$route.params.id,
+        selected: this.$route.params.id-1,
         msg: 'here is content',
         courseList:[
         {

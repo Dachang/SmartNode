@@ -18,8 +18,8 @@
 
 <script>
   import ContentHeader from './content/Header';
-  import CourseList from './content/CourseList';
-  import Syllabus from './content/Syllabus';
+  import CourseList from './content/syllabus/CourseList';
+  import Syllabus from './content/syllabus/Syllabus';
 
   export default {
     name: 'syllabus-page',
