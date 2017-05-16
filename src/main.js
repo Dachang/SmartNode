@@ -6,7 +6,6 @@ import router from './router'
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';    // 使用 CSS
 import './my-theme/index.less';
-
 require('vue2-animate/dist/vue2-animate.min.css');
 
 Vue.config.productionTip = false;

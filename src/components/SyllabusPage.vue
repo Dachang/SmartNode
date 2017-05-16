@@ -39,7 +39,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .content{
-    margin-left: 12rem;
+    margin-left: 120px;
     position: absolute;
     height: calc( 100% - 6rem );
     overflow: hidden;

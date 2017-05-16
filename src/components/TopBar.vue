@@ -16,8 +16,8 @@
       </Col>
       <Col span="9" class="flex justify-end">
       <Dropdown trigger="click" class="drop-down">
-        <a href="javascript:void(0)" style="font-size: 14px">
-          朱嘉业
+        <a href="javascript:void(0)" class='link-word'>
+          刘大畅
           <Icon type="arrow-down-b" color="#9b9b9b"></Icon>
         </a>
         <Dropdown-menu slot="list">
@@ -55,13 +55,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang='less'>
+@import '../App.less';
+
   .top-bar{
     height: 3rem;
     width: 100%;
     display: block;
-    margin-bottom: 3rem;
-    border-bottom: 1px solid #DADADA;
+    // margin-bottom: 3rem;
+    background-color: @white;
+    border-bottom: 1px solid #dadada;
   }
   .logo{
     padding-left: 1rem;
@@ -77,13 +80,13 @@ export default {
     width: 100%;
   }
   .inactivate{
-    background: #E8E8E8;
+    background: @white-four;
     color: black;
-    border-color: #E8E8E8;
+    border-color: @white-four;
   }
   .activate{
-    background-color: #4990E2;
-    border-color: #4990E2;
+    background-color: @dodger-blue;
+    border-color: @dodger-blue;
   }
   .drop-down{
     padding-right: 1rem;
