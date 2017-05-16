@@ -84,9 +84,18 @@ export default {
     color: black;
     border-color: @white-four;
   }
+  .inactivate:hover{
+    background: darken(@white-four,5%);
+    color: black;
+    border-color: darken(@white-four,5%);
+  }
   .activate{
     background-color: @dodger-blue;
     border-color: @dodger-blue;
+  }
+  .activate:hover{
+    background-color: darken(@dodger-blue,5%);
+    border-color: darken(@dodger-blue,5%);
   }
   .drop-down{
     padding-right: 1rem;
