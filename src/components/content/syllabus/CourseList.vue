@@ -18,7 +18,7 @@
             <a href="#">{{course.myProgress}}</a> / {{course.totalProgress}}</span>节课程</p>
       </li>
       <div class="progress-bar-border">
-        <div class="progress-bar-inner" :style="'width:'+course.myProgress/course.totalProgress*18+'rem'"></div>
+        <div class="progress-bar-inner" :style="'width:'+course.myProgress/course.totalProgress*100+'%;min-width:'+course.myProgress/course.totalProgress*13+'rem'"></div>
       </div>
     </router-link>
   </div>
@@ -105,7 +105,7 @@ export default {
 @import '../../../App.less';
 
 .progress-bar-border {
-  width: 18rem;
+  width: 100%;
   height: 4px;
   border-radius: 8px;
   border: solid 1px @white-three;
@@ -142,6 +142,7 @@ export default {
   /* position: absolute; */
   width: 100%;
   list-style: none;
+  padding-right: 2rem;
 }
 
 .course-list li {
@@ -151,11 +152,8 @@ export default {
   -ms-transition: background .25s ease;
   -o-transition: background .25s ease;
   transition: background .25s ease;
-} // .course-list li:hover{
-//   // background: #efeff4;
-//   /* animation: myfirst 0.25s;
-//   animation-fill-mode:forwards; */
-// }
+} 
+
 .course {
   margin: 0 0.7rem 12px 0;
   padding: 0 2rem;
@@ -179,8 +177,12 @@ export default {
   line-height: 1.17;
 }
 
+.learned,.selected,.progress-bar-border{
+  min-width: 13rem;
+}
+
 .learned {
-  width: 18rem;
+  width: 100%;
   height: 6rem;
   border-radius: 6px;
   background-color: @white;
@@ -193,7 +195,7 @@ export default {
 }
 
 .selected {
-  width: 18rem;
+  width: 100%;
   height: 6rem;
   border-radius: 6px;
   background-color: @dodger-blue;
@@ -214,7 +216,9 @@ export default {
 .selected .dots {
   color: @pastel-blue;
 }
-
+.selected>.course-progress{
+  color: @royal;
+}
 .selected .progress {
   color: @white;
 }
@@ -223,40 +227,40 @@ export default {
   color: @white;
 }
 
-@keyframes myfirst {
-  /* from {background: #fff;} */
-  to {
-    background: #efeff4;
-  }
-}
+// @keyframes myfirst {
+//   /* from {background: #fff;} */
+//   to {
+//     background: #efeff4;
+//   }
+// }
 
-@-moz-keyframes myfirst
-/* Firefox */
+// @-moz-keyframes myfirst
+// /* Firefox */
 
-{
-  /* from {background: #fff;} */
-  to {
-    background: #efeff4;
-  }
-}
+// {
+//   /* from {background: #fff;} */
+//   to {
+//     background: #efeff4;
+//   }
+// }
 
-@-webkit-keyframes myfirst
-/* Safari 和 Chrome */
+// @-webkit-keyframes myfirst
+// /* Safari 和 Chrome */
 
-{
-  /* from {background: #fff;} */
-  to {
-    background: #efeff4;
-  }
-}
+// {
+//   /* from {background: #fff;} */
+//   to {
+//     background: #efeff4;
+//   }
+// }
 
-@-o-keyframes myfirst
-/* Opera */
+// @-o-keyframes myfirst
+// /* Opera */
 
-{
-  /* from {background: #fff;} */
-  to {
-    background: #efeff4;
-  }
-}
+// {
+//   /* from {background: #fff;} */
+//   to {
+//     background: #efeff4;
+//   }
+// }
 </style>

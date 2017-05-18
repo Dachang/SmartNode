@@ -11,7 +11,7 @@
       </Col>
       <Col span="17">
       <!-- <router-view></router-view> -->
-      <syllabus></syllabus>
+      <CourseInfo></CourseInfo>
       </Col>
     </Row>
   
@@ -21,7 +21,8 @@
 <script>
 // import ContentHeader from './content/Header';
 import CourseList from './content/syllabus/CourseList';
-import Syllabus from './content/syllabus/Syllabus';
+// import Syllabus from './content/syllabus/Syllabus';
+import CourseInfo from './content/syllabus/CourseInfo';
 
 export default {
   name: 'syllabus-page',
@@ -33,7 +34,7 @@ export default {
   components: {
     // ContentHeader,
     CourseList,
-    Syllabus
+    CourseInfo
   }
 }
 </script>
@@ -45,7 +46,7 @@ export default {
   position: fixed;
   height: calc( 100% - 3rem);
   overflow: hidden;
-
+  width: calc(100% - 120px);
 }
 
 [padding] {
