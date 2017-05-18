@@ -144,24 +144,6 @@
     background-color: @dodger-blue;
     box-shadow: 2px 3px 11px 0 rgba(1, 172, 253, 0.74);
   }
-  /*** iview theme custom start ***/
 
-  // .ivu-btn:not(.btn-activate){
-  //   border-color: #FFF;
-  // }
-  // .ivu-btn:not(.btn-activate):hover{
-  //   border-color: #5cadff;
-  // }
-
-  // .ivu-menu-vertical .ivu-menu-item:hover{
-  //   background: none;
-  // }
-  // .ivu-menu-vertical .ivu-menu-item:hover{
-  //   background: none;
-  // }
-  // .ivu-menu{
-  //   height: 100%;
-  // }
-  /*** iview theme custom end ***/
 
 </style>
