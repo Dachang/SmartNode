@@ -16,6 +16,10 @@ Please check (nested) symbols as needed when implementing UI components.
 
 ![Sketch](assets/sketch_sc.jpg)
 
+The newly redesigned resizing controls in Sketch 44 gives us more flexibility when designing responsive layouts. We design a general responsive grid template based on this specific feature. Now you can resize the artboard to change the layout correspondingly. (The default demension of the artboard is the min width/height within the media query).
+
+![Sketch](assets/responsive_layout.jpg)
+
 #### Invision (Design Sprint & Interaction Flow)
 
 <a href="https://invis.io/6HBLTNZGB" target="_blank">SmartNode Invision</a>
