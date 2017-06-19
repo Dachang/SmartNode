@@ -90,9 +90,9 @@
     margin: 1rem 0;
     display: inline-block;
   }
-  .content{
+  /*.content{
     margin-left: 12rem;
-  }
+  }*/
   .discription-list{
     /* padding-left: 2rem; */
     display: inline-block;

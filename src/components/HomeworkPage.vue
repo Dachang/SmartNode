@@ -63,9 +63,9 @@
     color: black;
     border-color: #E8E8E8;
   }
-  .content{
+  /*.content{
     margin-left: 12rem;
-  }
+  }*/
   .row{
     display: flex;
     align-items: center;

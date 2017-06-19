@@ -4,6 +4,7 @@ import Hello from '@/components/Hello'
 import SyllabusPage from '@/components/SyllabusPage'
 import HomeworkPage from '@/components/HomeworkPage'
 import HomeworkDetail from '@/components/content/homework/HomeworkDetail'
+import CourseDetail from '@/components//CourseDetail'
 
 Vue.use(Router);
 
@@ -15,6 +16,12 @@ export default new Router({
       name: 'Root',
       component: SyllabusPage,
       redirect: '/syllabus/1'
+    },
+    {
+      path: '/lesson/:id',
+      name: 'LessonDetail',
+      component: CourseDetail,
+      // redirect: '/lesson/5022c3927cdd92dffe8ee4b614a0d02c'
     },
     {
       path: '/hello',

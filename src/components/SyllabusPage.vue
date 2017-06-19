@@ -5,7 +5,7 @@
         <p slot="subtitle" class="subtitle">编程基础 第一学期</p>
         <Button slot="btn" type="ghost" class="btn-font custom-ghost"> 查看简介</Button>
       </content-header>-->
-    <Row padding class="prevent-overflow">
+    <Row class="prevent-overflow">
       <Col span="7" class='scroll'>
       <course-list></course-list>
       </Col>
@@ -42,16 +42,16 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .content {
-  margin-left: 120px;
-  position: fixed;
-  height: calc( 100% - 3rem);
-  overflow: hidden;
-  width: calc(100% - 120px);
+  /*margin-left: 120px;*/
+  /*position: fixed;*/
+  height: 100%;
+  /*overflow: hidden;*/
+  /*width: calc(100% - 120px);*/
 }
 
-[padding] {
+/*[padding] {
   padding: 0 2rem;
-}
+}*/
 
 .scroll {
   overflow: scroll;
@@ -60,11 +60,12 @@ export default {
 .prevent-overflow {
   /*height: calc(100% - 9.5rem);*/
   height: 100%;
+  padding: 0 1rem 0 2rem;
 }
 
 .prevent-overflow>div {
   height: 100%;
   overflow: scroll;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 </style>

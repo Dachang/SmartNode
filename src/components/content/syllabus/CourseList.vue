@@ -3,7 +3,7 @@
   <div class="course-list">
     <p class="title-charcoal-grey-13-px" id="all-course">全部课程</p>
     <router-link :to="'/syllabus/'+(index+1)" v-for="(course,index) in courseList" :key="index">
-      <li class="course" :class="{'learned':true,'selected':(selected==index)}" @click="switchClass(index)">
+      <li class="course" :class="{'selected':(selected==index)}" @click="switchClass(index)">
         <Row type="flex" justify="space-between">
           <Col class="course-name">
           <p class="text-style">{{course.name}}</p>
@@ -17,7 +17,7 @@
           <span class="progress">
             <a href="#">{{course.myProgress}}</a> / {{course.totalProgress}}</span>节课程</p>
       </li>
-      <div class="progress-bar-border">
+      <div class="progress-bar-border" @click="switchClass(index)">
         <div class="progress-bar-inner" :style="'width:'+course.myProgress/course.totalProgress*100+'%;min-width:'+course.myProgress/course.totalProgress*13+'rem'"></div>
       </div>
     </router-link>
@@ -160,6 +160,11 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  height: 6rem;
+  border-radius: 6px;
+  background-color: @white;
+  border: solid 1px @pale-grey;
 }
 
 .course-name {
@@ -177,19 +182,19 @@ export default {
   line-height: 1.17;
 }
 
-.learned,.selected,.progress-bar-border{
+.course,.selected,.progress-bar-border{
   min-width: 13rem;
 }
 
-.learned {
-  width: 100%;
-  height: 6rem;
-  border-radius: 6px;
-  background-color: @white;
-  border: solid 1px @pale-grey;
-}
+// .inactive {
+//   width: 100%;
+//   height: 6rem;
+//   border-radius: 6px;
+//   background-color: @white;
+//   border: solid 1px @pale-grey;
+// }
 
-.learned:hover {
+.course:hover {
   background-color: darken(@white, 5%);
   border: solid 1px darken(@pale-grey, 5%);
 }

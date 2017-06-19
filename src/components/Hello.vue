@@ -51,7 +51,7 @@ a {
   color: #42b983;
 }
 
-.hello{
+/*.hello{
   margin-left: 12rem;
-}
+}*/
 </style>

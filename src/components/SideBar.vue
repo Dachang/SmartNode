@@ -107,17 +107,17 @@
   }
 
   .side-bar{
-    position: fixed;
-    left: 0;
+    // position: fixed;
+    // left: 0;
     height: 100%;
     width: 120px;
     border-right: solid 1px #dadada;
   }
-  // .btn-list{
-
-  // }
+  .btn-list{
+    padding-top: 1.75rem;
+  }
   .btn-list li{
-    margin: 1.75rem 0;
+    margin-bottom: 1.75rem;
   }
   .text-left{
     text-align: left;
