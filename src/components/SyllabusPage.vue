@@ -9,12 +9,12 @@
       <Col span="7" class='scroll'>
       <course-list></course-list>
       </Col>
-      <Col span="17">
+      <Col span="17" style="border-left:1px solid #dadada">
       <!-- <router-view></router-view> -->
       <CourseInfo></CourseInfo>
       </Col>
     </Row>
-  
+
   </div>
 </template>
 

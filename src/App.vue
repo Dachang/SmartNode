@@ -7,7 +7,7 @@
         <Col>
           <side-bar></side-bar>
         </Col>
-        <Col style="width: calc( 100% - 120px )">
+        <Col style="width: calc( 100% - 120px );">
           <transition name="fade"mode="out-in">
           <keep-alive>
             <router-view class="fast"></router-view>
@@ -16,8 +16,8 @@
         </Col>
       </Row>
     </div>
-    
-    
+
+
   </div>
 </template>
 
@@ -59,7 +59,7 @@ export default {
   }
   .layout{
         /*border: 1px solid #d7dde4;*/
-        background: #f5f7f9;
+        // background: #f5f7f9;
         position: relative;
         /*border-radius: 4px;*/
         // overflow: hidden;

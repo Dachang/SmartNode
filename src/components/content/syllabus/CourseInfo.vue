@@ -18,14 +18,20 @@
     </Row>
     <p>在此入门级编程课程中，你将学习软件工程师必须掌握的一门技能——面向对象编程方法，从而轻松地重复利用和共享代码。你将在实践中学习知识：在每节课中，你都会运用所学的编程概念，构建一个超小的迷你项目。</p>
     <p>我们知道，对新手来说，编程不是一件容易的事，因此，我们精心设计本课程，确保你能获得愉快的学习体验！</p>
-    <router-link :to="'/lesson/'+lesson.id" v-for="(lesson,index) in lessons" :key="lesson.id">
-      <Row class="lesson" :class="lessonType(index)" type="flex" align="middle" justify="space-between" >
-        <span class="text-style">{{fmtNum(index)}}.{{lesson.name}}</span>
-        <span class="date">{{lesson.date}}</span>
-      </Row>
-    </router-link>
+    <div v-if="style==='list'">
+      <router-link :to="'/lesson/'+lesson.id" v-for="(lesson,index) in lessons" :key="lesson.id">
+        <Row class="lesson" :class="lessonType(index)" type="flex" align="middle" justify="space-between" >
+          <span class="text-style">{{fmtNum(index)}}.{{lesson.name}}</span>
+          <span class="date">{{lesson.date}}</span>
+        </Row>
+      </router-link>
+    </div>
+    <div v-if="style==='date'">
+      <Calender :lessons="CalenderLessons"></Calender>
+    </div>
 
-    
+
+
     <!--<Row class="lesson" type='flex' align="middle" justify="space-between">
       <span class='text-style'>04. 了解只能硬件</span>
       <span class="date">3月26日</span>
@@ -42,12 +48,59 @@
 </template>
 
 <script>
+import Calender from "./calendar.vue"
+
 export default {
+  components:{
+    Calender
+  },
   name: 'CourseInfo',
   data () {
     return {
       currentLesson:2,
       style: 'list',
+      CalenderLessons:[
+        {
+          id:'5022c3927cdd92dffe8ee4b614a0d02c',
+          name:'了解智能硬件',
+          date:'2017-05-30'
+        },
+        {
+          id:'5022c3927cdd92dffe8ee4b614a0d02c',
+          name:'了解智能硬件',
+          date:'2017-06-2'
+        },
+        {
+          id:'3284719918160a9d87e1ee7f24b38b27',
+          name:'使用SmartNode进行练习',
+          date:'2017-06-6'
+        },
+        {
+          id:'30d2c9afd77947d5cc448b0b992e5bf0',
+          name:'制作第一个原型',
+          date:'2017-06-16'
+        },
+        {
+          id:'8cc1b3db220de6aa9b20d9f9ab6284be',
+          name:'更多模块和可能性',
+          date:'2017-06-20'
+        },
+        {
+          id:'038d33fb47cbe927a6fa2371355b2aee',
+          name:'蓝牙模块和通信',
+          date:'2017-06-23'
+        },
+        {
+          id:'5421d2951a8dd6f7a07403fac025851d',
+          name:'机器人制作 第一部分',
+          date:'2017-06-27'
+        },
+        {
+          id:'f548a28814845dee6fdad464a086e1a0',
+          name:'使用移动应用控制硬件',
+          date:'2017-07-1'
+        }
+      ],
       lessons:[
         {
           id:'5022c3927cdd92dffe8ee4b614a0d02c',
@@ -108,7 +161,7 @@ export default {
     },
     fmtNum (num){
       num++;
-      return (num >= 10) ? num : ('0'+num) 
+      return (num >= 10) ? num : ('0'+num)
     }
   }
 }
@@ -202,5 +255,3 @@ letter-spacing: 0;
 }
 
 </style>
-
-
