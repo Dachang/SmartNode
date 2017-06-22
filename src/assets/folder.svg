@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="15px" viewBox="0 0 16 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>folder icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="File-Item/Small" transform="translate(-8.000000, -6.000000)">
+            <g id="file_item">
+                <rect id="base" stroke="#E9EFF4" fill="#FFFFFF" x="0" y="5.32907052e-15" width="208" height="29" rx="3"></rect>
+                <g id="folder-icon" transform="translate(9.000000, 7.000000)">
+                    <path d="M12.962963,4.33333333 L12.2981956,4.33333333 L12.2981956,3 C12.2981956,2.63233333 12.0000475,2.33333333 11.6334283,2.33333333 L7.31244065,2.33333333 C7.23466287,2.33333333 7.15954416,2.306 7.0997151,2.25633333 L5.19781576,0.666666667 L1.32953466,0.666666667 C0.96291548,0.666666667 0.664767331,0.965666667 0.664767331,1.33333333 L0.664767331,3.66666667 L12.962963,3.66666667 L12.962963,4.33333333 L0.664767331,4.33333333 L0,4.33333333 L0,1.33333333 C0,0.598 0.596296296,0 1.32953466,0 L5.31813865,0 C5.39591643,0 5.47103514,0.0273333333 5.5308642,0.077 L7.43276353,1.66666667 L11.6334283,1.66666667 C12.3666667,1.66666667 12.962963,2.26466667 12.962963,3 L12.962963,4.33333333 Z" id="Page-1" stroke="#FFFFFF" stroke-width="0.2" fill="#518AFF"></path>
+                    <rect id="Rectangle-path" stroke="#518AFF" stroke-width="0.5" fill="#E0EEFD" x="0" y="3.12" width="14" height="9.88" rx="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

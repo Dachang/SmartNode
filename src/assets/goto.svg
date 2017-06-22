@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Go to icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="288" height="840"></rect>
+        <filter x="-0.5%" y="-0.1%" width="100.7%" height="100.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-1" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.854901961   0 0 0 0 0.854901961   0 0 0 0 0.854901961  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Course-Wizard" transform="translate(-228.000000, -246.000000)">
+            <g>
+                <g id="side-app---ooto-space">
+                    <g id="base">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill-opacity="0.75" fill="#F6F6F6" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+                <g id="practice" transform="translate(32.000000, 215.000000)">
+                    <g id="Go-to-icon" transform="translate(196.000000, 31.000000)">
+                        <circle id="Oval" fill="#518AFF" cx="6" cy="6" r="6"></circle>
+                        <path d="M5.59708804,2.81237654 L5.59708804,8.060362 C5.59708804,8.06127676 5.59525851,8.06219153 5.59525851,8.06127676 L3.69255505,6.08173335 C3.53887515,5.92165013 3.28365676,5.91616156 3.12357353,6.07075622 C2.96349031,6.22443611 2.95800174,6.47965451 3.1125964,6.63973773 L5.70320034,9.33553923 C5.77912553,9.4142087 5.88432308,9.459032 5.99317967,9.459032 C6.10295102,9.459032 6.20723381,9.4142087 6.283159,9.33553923 L8.88748436,6.62510155 C8.96249479,6.54734684 9,6.4467231 9,6.34609936 C9,6.23998705 8.95883574,6.13478951 8.87650723,6.05612004 C8.716424,5.90244014 8.46120561,5.90701395 8.30752571,6.06709717 L6.40482225,8.04664058 C6.40390749,8.04755535 6.40299272,8.04664058 6.40299272,8.04572582 L6.40299272,2.80322892 C6.40299272,2.58917478 6.23559141,2.41445538 6.02519632,2.40164872 C5.79101743,2.3879273 5.59708804,2.57911241 5.59708804,2.81237654 Z" id="Shape" fill="#FFFFFF" transform="translate(6.000000, 5.929993) scale(1, -1) rotate(-90.000000) translate(-6.000000, -5.929993) "></path>
+                    </g>
+                    <text id="基础模块的使用和连接" font-family="PingFangSC-Regular, PingFang SC" font-size="13" font-weight="normal" fill="#808080">
+                        <tspan x="0" y="42">基础模块的使用和连接</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
